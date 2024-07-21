@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle</title>
+</head>
+<body>
+    <p id="demo">I Am a Cool Text</p>
+        
+        <button class="btn" onclick="myFunction()">Click Me</button>
+    <style>
+        body
+        {
+        transition:2s;
+        }
+        #demo 
+        {
+        font-size: 3rem;
+          font-weight: 800;
+          text-align:center;
+        }
+        button 
+        {
+          position:relative;
+          left:40%;
+          width: 7rem;
+          height: 3rem;
+          font-weight:800;
+        }
+        
+        .mystyle
+        {
+          background-color: black;
+          color:white;
+        }
+        .btn{
+            border-radius: 7px;
+            
+        }
+        </style>
+        
+        
+        
+        
+        <script>
+        
+        
+        function myFunction() {
+           let element = document.body;
+           element.classList.toggle("mystyle");
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="demo">
+    <label for="Fahrenheit">Fahrenheit</label>
+<input type="number" value="0" id="Fahrenheit" class="inpt"><br><br>
+<label for="Celcius">  Celcius</label>
+<!-- //1 * 12 formula -->
+<input type="number" value="0" id="Celcius" class="inpt">
+</div>
+<style>
+
+</style>
+<script>
+    let Fahrenheit= document.getElementById('Fahrenheit');
+let Celcius= document.getElementById('Celcius');
+Fahrenheit.addEventListener('input',function()
+                     {
+  // alert("changed");
+  let f=this.value;
+  let c=(f-32)*5/9;
+  
+  Celcius.value=c;
+  
+  
+});
+
+
+
+Celcius.addEventListener('input',function()
+                     {
+  // alert("changed");
+  let c=this.value;
+  let f=(c*9/5)+32;// c=f-32
+  
+  Fahrenheit.value=f;
+
+});
+          
+
+                      
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('assert/summer.jpg');
+    background-position: center ;
+    background-size:cover ;
+}
+.back-frem{
+width: 15rem;
+height: 5rem;
+background-color: rgba(167, 245, 245, 0.536);
+border-radius: 19px;
+position: fixed;
+bottom: 10px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.back-frem .back-change{
+    width: 70px;
+    height: 70px;
+    background: rgba(250, 104, 104, 0.915);
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 22px;
+}
+.back-frem .back-change img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
